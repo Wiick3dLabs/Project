@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h3>Edit Article:</h3>
+    <form action="/article/<%= articleEdit.id %>?_method= put" method="post"></form>
+    <input type="text" name="body" value="<%= articleRow.body %>" required>
+    <input type="text" name="title" value="<%= articleRow.title %>" required>
+    <button>Submit</button>
+</body>
+
+</html>

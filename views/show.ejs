@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <!--   Not an object if it's a single article-->
+            <h1><a href="/articles/<%=articleRow.id %>"><%= articleRow.title %> </a></h1>
+            <h2><%= author.name %></h2>
+            <p><%= articleRow.body %></p>
+            <a href="/articles/<%= articleRow.id %>/edit">Edit Article</a>
+            <a href="/">Back to home</a>
+</body>
+
+</html>

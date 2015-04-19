@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All</title>
+</head>
+<body>
+    <h1>Articles</h1>
+    <ul>
+        <% for (var i = 0; i < articles.length; i++) { %>
+        <li><a href="<%= articles[i].title %>"><%= articles[i].title %></a></li>
+        <% } %>
+    </ul>
+</body>
+</html>

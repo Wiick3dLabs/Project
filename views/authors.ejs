@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors page</title>
+</head>
+<body>
+    <h1>Authors</h1>
+    <ul>
+        <% for (var i = 0; i < authors.length; i++) { %>
+        <li><a href="/author/<%= authors[i].author_id %>"><%= authors[i].name %></li>
+        <% } %>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>W1ick3dPedia</title>
+    <h1>W1ick3dPedia Home</h1>
+    <ul>
+        <a href="/author/new">Add Author</a>
+        <a href="/articles/new">Add Article</a>
+        <a href="/results">Search</a>
+        <a href="/authors">Authors</a>
+        <a href="/articles">Articles</a>
+    </ul>
+</head>
+
+<body>
+        <% articles.forEach(function(obj) { %>
+                <h1><a href="/articles/<%=obj.id %>"><%=obj.title %></a></h1>
+                <p>
+                    <%=obj.body %>
+                </p>
+
+            <% }); %>
+</body>
+</html>
